@@ -21,11 +21,7 @@ const createChatMessageElement = (message) => `
 <div class="message-timestamp">${message.timestamp}</div>
 </div>
 `;
-// window.onload = () => {
-//   messages.forEach((message) => {
-//     chatMessages.innerHTML += createChatMessageElement(message)
-//   })
-// }
+
 
 Window.onload = () => {
   messages.forEach((messae) => {
