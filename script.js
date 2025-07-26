@@ -1,4 +1,4 @@
-const johnSelectorBtn = document.querySelector("#john-selector");
+const johnSelectorBtn = document.querySelector("#Jake-selector");
 
 const janeSelectorBtn = document.querySelector("#jane-selector");
 
@@ -15,7 +15,7 @@ const clearChatBtn = document.querySelector(".clear-chat-button");
 const messages = JSON.parse(localStorage.getItem("messages")) || [];
 
 const createChatMessageElement = (message) => `
-<div class="message ${message.sender === "john" ? "blue-bg" : "gray-bg"}">
+<div class="message ${message.sender === "Jake" ? "blue-bg" : "gray-bg"}">
 <div class="message-sender">${message.sender}</div>
 <div class="message-text">${message.text}</div>
 <div class="message-timestamp">${message.timestamp}</div>
@@ -29,14 +29,14 @@ Window.onload = () => {
   });
 };
 
-let messageSender = "john";
+let messageSender = "Jake";
 
 const updateMessageSender = (name) => {
   messageSender = name;
   chatHeader.innerText = `${messageSender} chatting...`;
   chatInput.placeholder = `type here, ${messageSender}...`;
 
-  if (name === "john") {
+  if (name === "Jake") {
     johnSelectorBtn.classList.add("active-person");
     janeSelectorBtn.classList.remove("active-person");
   }
@@ -49,7 +49,7 @@ const updateMessageSender = (name) => {
   chatInput.focus();
 };
 
-johnSelectorBtn.onclick = () => updateMessageSender("john");
+johnSelectorBtn.onclick = () => updateMessageSender("Jake");
 
 janeSelectorBtn.onclick = () => updateMessageSender("jane");
 
