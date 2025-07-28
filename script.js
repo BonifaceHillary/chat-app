@@ -1,6 +1,6 @@
 const johnSelectorBtn = document.querySelector("#Jake-selector");
 
-const janeSelectorBtn = document.querySelector("#jane-selector");
+const janeSelectorBtn = document.querySelector("#Imma-selector");
 
 const chatHeader = document.querySelector(".chat-header");
 
@@ -41,7 +41,7 @@ const updateMessageSender = (name) => {
     janeSelectorBtn.classList.remove("active-person");
   }
 
-  if (name === "jane") {
+  if (name === "Imma") {
     janeSelectorBtn.classList.add("active-person");
     johnSelectorBtn.classList.remove("active-person");
   }
@@ -51,7 +51,7 @@ const updateMessageSender = (name) => {
 
 johnSelectorBtn.onclick = () => updateMessageSender("Jake");
 
-janeSelectorBtn.onclick = () => updateMessageSender("jane");
+janeSelectorBtn.onclick = () => updateMessageSender("Imma");
 
 const sendMessage = (e) => {
   e.preventDefault();
