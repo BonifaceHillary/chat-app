@@ -37,7 +37,7 @@ const updateMessageSender = (name) => {
   chatInput.placeholder = `type here, ${messageSender}...`;
 
   if (name === "Jake") {
-    johnSelectorBtn.classList.add("active-person");
+    jakeSelectorBtn.classList.add("active-person");
     immaSelectorBtn.classList.remove("active-person");
   }
 
