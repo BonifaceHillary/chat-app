@@ -38,7 +38,7 @@ const updateMessageSender = (name) => {
 
   if (name === "Jake") {
     johnSelectorBtn.classList.add("active-person");
-    janeSelectorBtn.classList.remove("active-person");
+    immaSelectorBtn.classList.remove("active-person");
   }
 
   if (name === "Imma") {
