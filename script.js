@@ -42,7 +42,7 @@ const updateMessageSender = (name) => {
   }
 
   if (name === "Imma") {
-    janeSelectorBtn.classList.add("active-person");
+    immaSelectorBtn.classList.add("active-person");
     johnSelectorBtn.classList.remove("active-person");
   }
 
