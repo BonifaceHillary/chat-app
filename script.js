@@ -43,7 +43,7 @@ const updateMessageSender = (name) => {
 
   if (name === "Imma") {
     immaSelectorBtn.classList.add("active-person");
-    johnSelectorBtn.classList.remove("active-person");
+    jakeSelectorBtn.classList.remove("active-person");
   }
 
   chatInput.focus();
