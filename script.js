@@ -24,7 +24,7 @@ const createChatMessageElement = (message) => `
 
 
 Window.onload = () => {
-  messages.forEach((messae) => {
+  messages.forEach((message) => {
     chatMessages.innerHTML += createChatMessageElement(message);
   });
 };
@@ -60,7 +60,7 @@ const sendMessage = (e) => {
     minute: "numeric",
     hour12: true,
   });
-  
+
   const message = {
     sender: messageSender,
     text: chatInput.value, 
