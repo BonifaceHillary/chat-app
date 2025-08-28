@@ -60,6 +60,7 @@ const sendMessage = (e) => {
     minute: "numeric",
     hour12: true,
   });
+  
   const message = {
     sender: messageSender,
     text: chatInput.value, 
