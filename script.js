@@ -27,7 +27,6 @@ Window.onload = () => {
     chatMessages.innerHTML += createChatMessageElement(message);
   });
 };
-
 let messageSender = "Jake";
 
 const updateMessageSender = (name) => {
