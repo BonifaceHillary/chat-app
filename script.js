@@ -22,7 +22,6 @@ const createChatMessageElement = (message) => `
 </div>
 `;
 
-
 Window.onload = () => {
   messages.forEach((message) => {
     chatMessages.innerHTML += createChatMessageElement(message);
