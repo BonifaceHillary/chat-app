@@ -13,7 +13,6 @@ const chatInput = document.querySelector(".chat-input");
 const clearChatBtn = document.querySelector(".clear-chat-button");
 
 const messages = JSON.parse(localStorage.getItem("messages")) || [];
-
 const createChatMessageElement = (message) => `
 <div class="message ${message.sender === "Jake" ? "blue-bg" : "gray-bg"}">
 <div class="message-sender">${message.sender}</div>
