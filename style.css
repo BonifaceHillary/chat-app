@@ -42,10 +42,10 @@ button:active {
   font-size: 1.1em;
 }
 
-.active-person {
+ .active-person {
   background: #08529d;
-  box-shadow: 000.5em 0.1em #c3c3c333;
-}
+  box-shadow: 000.1em 0.1em #c3c3c333;
+} 
 
 .chat-container {
   background: #15202b;

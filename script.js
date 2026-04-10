@@ -26,6 +26,7 @@ Window.onload = () => {
     chatMessages.innerHTML += createChatMessageElement(message);
   });
 };
+
 let messageSender = "Jake";
 
 const updateMessageSender = (name) => {
@@ -34,21 +35,21 @@ const updateMessageSender = (name) => {
   chatInput.placeholder = `type here, ${messageSender}...`;
 
   if (name === "Jake") {
-    jakeSelectorBtn.classList.add("active-person");
-    immaSelectorBtn.classList.remove("active-person");
+    johnSelectorBtn.classList.add("active-person");
+    janeSelectorBtn.classList.remove("active-person");
   }
 
-  if (name === "Imma") {
-    immaSelectorBtn.classList.add("active-person");
-    jakeSelectorBtn.classList.remove("active-person");
+  else if (name === "Imma") {
+    johnSelectorBtn.classList.add("active-person");
+    janeSelectorBtn.classList.remove("active-person");
   }
 
   chatInput.focus();
 };
 
-johnSelectorBtn.onclick = () => updateMessageSender("Jake");
+johnSelectorBtn.onclick = () => updateMessageSender("John");
 
-janeSelectorBtn.onclick = () => updateMessageSender("Imma");
+janeSelectorBtn.onclick = () => updateMessageSender("jane");
 
 const sendMessage = (e) => {
   e.preventDefault();
